@@ -1,7 +1,9 @@
 import React from 'react'
+import { UseQuiz } from '../contexts/QuizProvider';
 
 function Options(props) {
-  const {questions,dispatch,answer,points} = props;
+  const {questions} = props;
+  const {dispatch,answer,points,highScore} = UseQuiz()
   const hasAnswered = answer !== null;
   return (
     <div className ='options'>
@@ -18,7 +20,6 @@ function Options(props) {
           >
             {option}
           </button>)}
-          <p>{points}</p>
     </div>
   )
 }

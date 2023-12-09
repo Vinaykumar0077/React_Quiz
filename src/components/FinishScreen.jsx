@@ -1,7 +1,9 @@
 import React from 'react'
+import { UseQuiz } from '../contexts/QuizProvider';
 
 function FinishScreen(props) {
-    const {points,maxPoints,highScore,dispatch} = props;
+    // const {points,maxPoints,highScore,dispatch} = props;
+    const {points,maxPoints,highScore,dispatch} = UseQuiz();
     console.log("----",highScore);
     console.log("po",points,"m",maxPoints);
     const percentage = Math.round((points/maxPoints)*100,2);
