@@ -3,7 +3,7 @@ import { UseQuiz } from '../contexts/QuizProvider';
 
 function Options(props) {
   const {questions} = props;
-  const {dispatch,answer,points,highScore} = UseQuiz()
+  const {dispatch,answer} = UseQuiz()
   const hasAnswered = answer !== null;
   return (
     <div className ='options'>

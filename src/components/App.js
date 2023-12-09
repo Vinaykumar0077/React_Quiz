@@ -18,10 +18,10 @@ function App() {
     <div className="app">
       <Header/>
       <Main>
-        {status == "loading" && <Loader/>}
-        {status == "error" && <Error/>}
-        {status == "ready" && <StartScreen />}
-        {status == "active" && (
+        {status === "loading" && <Loader/>}
+        {status === "error" && <Error/>}
+        {status === "ready" && <StartScreen />}
+        {status === "active" && (
         <>
         <Progress />
 
@@ -33,7 +33,7 @@ function App() {
         </Footer>
         </>
         )}
-        {status == "finished" && <FinishScreen />}
+        {status === "finished" && <FinishScreen />}
       </Main>
     </div>
   );

@@ -9,7 +9,7 @@ function FinishScreen(props) {
     const percentage = Math.round((points/maxPoints)*100,2);
 
     let emoji;
-    if(percentage == 100){
+    if(percentage === 100){
         emoji = "🥇";
     }else if(percentage >= 80 && percentage < 100){
         emoji = "🥳";

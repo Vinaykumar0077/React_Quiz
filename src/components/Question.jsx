@@ -4,7 +4,7 @@ import { UseQuiz } from '../contexts/QuizProvider';
 
 function Question(props) {
     // const {questions,dispatch,answer,points} = props;
-    const {questions,index,dispatch,answer,points} = UseQuiz()
+    const {questions,index} = UseQuiz()
   return (
     <div>
         <h4>{questions[index].question}</h4>

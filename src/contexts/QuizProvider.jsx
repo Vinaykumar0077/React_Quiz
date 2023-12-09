@@ -76,7 +76,7 @@ function reducer (state,action){
 
 function QuizProvider({children}) {
     const [state,dispatch] = useReducer(reducer,initialState);
-    const {status,questions,index,answer,points,highScore,remainingTime} = state;
+    // const {status,questions,index,answer,points,highScore,remainingTime} = state;
     const numQuestions = questions.length;
     const maxPoints = questions.reduce((prev,curr)=>prev + curr.points,0);
     useEffect(()=>{
